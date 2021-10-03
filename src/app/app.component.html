@@ -1,4 +1,14 @@
 <div>
+    <h2> *ngFor Objs</h2>
+    <div *ngFor="let product of products">
+        <img [src]="product.image" width="100" height="100" alt="image of {{product.name}}">
+        <h2>{{product.price}}</h2>
+        <h4>{{product.name}}</h4>
+        <p>{{product.category}}</p>
+    </div>
+</div>
+
+<div>
     <input type="text" [(ngModel)]="newEmoji">
     <button (click)="addEmoji()">Add Emoji</button>
     <ul>
@@ -20,5 +30,5 @@
 <p *ngIf="person.age>=18; else personAgeElse">Mayor de edad</p>
 
 <ng-template #personAgeElse>
-    <p>Menor de edad</p>
+    <p>Menor d e edad</p>
 </ng-template>
