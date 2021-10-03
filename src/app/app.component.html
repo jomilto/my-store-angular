@@ -6,11 +6,13 @@
 
 <div>
     <h2> *ngFor Objs</h2>
-    <div *ngFor="let product of products">
-        <img [src]="product.image" width="100" height="100" alt="image of {{product.name}}">
-        <h2>{{product.price}}</h2>
-        <h4>{{product.name}}</h4>
-        <p>{{product.category}}</p>
+    <div class="products--grid">
+        <div *ngFor="let product of products">
+            <img [src]="product.image" alt="image of {{product.name}}">
+            <h2>{{product.price}}</h2>
+            <h4>{{product.name}}</h4>
+            <p>{{product.category}}</p>
+        </div>
     </div>
 </div>
 
