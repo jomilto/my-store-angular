@@ -1,10 +1,3 @@
-<h2>Name {{person.name}}</h2>
-<input type="text" required #nameInput2="ngModel" [(ngModel)]="person.name" />
-<p class="message-error" [class.invalid]="nameInput2.invalid">
-    El campo es requerido
-</p>
-
-
 <div [ngSwitch]="person.name">
     <p *ngSwitchCase="'jose'">Jose</p>
     <p *ngSwitchCase="'carlos'">Carlos</p>
@@ -46,5 +39,7 @@
 <p *ngIf="person.age>=18; else personAgeElse">Mayor de edad</p>
 
 <ng-template #personAgeElse>
-    <p>Menor d e edad</p>
+    <p>Menor de edad</p>
 </ng-template>
+<p>Valid {{ageInput.valid}}</p>
+<p>Valid {{ageInput.valid}}</p>

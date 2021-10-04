@@ -9,6 +9,7 @@ import { Product } from './product.model'
 })
 export class AppComponent {
   title = 'my-store';
+  widthImg = 10;
   person = {
     name: 'Jose',
     age: 12
@@ -51,6 +52,12 @@ export class AppComponent {
       image: './assets/images/glasses.jpg'
     }
   ]
+
+  register = {
+    name:'',
+    email:'',
+    password:''
+  }
 
   addEmoji(){
     this.emojis.push(this.newEmoji);
