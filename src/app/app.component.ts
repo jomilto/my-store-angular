@@ -15,6 +15,12 @@ export class AppComponent {
     age: 12
   }
 
+  box = {
+    width:10,
+    height:10,
+    color:'red'
+  }
+
   newEmoji = '';
 
   emojis: string[] = [ '😂' , '🐦', '🐳','🌮', '💚']

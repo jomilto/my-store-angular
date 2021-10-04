@@ -4,6 +4,19 @@
     El campo es requerido
 </p>
 
+<div>
+  <div>
+    <input type="number" [(ngModel)]="box.width">
+    <input type="number" [(ngModel)]="box.heigth">
+    <input type="color" [(ngModel)]="box.color">
+  </div>
+  <div [ngStyle]="{
+      width.px: box.width,
+      heigth.px: box.heigth,
+      background-color: box.color
+  }"></div>
+</div>
+
 <div [ngSwitch]="person.name">
     <p *ngSwitchCase="'jose'">Jose</p>
     <p *ngSwitchCase="'carlos'">Carlos</p>
