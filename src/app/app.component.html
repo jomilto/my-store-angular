@@ -1,4 +1,12 @@
+<h2>Name {{person.name}}</h2>
+<input type="text" required #nameInput2="ngModel" [(ngModel)]="person.name" />
+<p class="message-error" [class.invalid]="nameInput2.invalid">
+    El campo es requerido
+</p>
+
+
 <div [ngSwitch]="person.name">
+    <p *ngSwitchCase="'jose'">Jose</p>
     <p *ngSwitchCase="'carlos'">Carlos</p>
     <p *ngSwitchCase="'enrique'">Enrique</p>
     <p *ngSwitchDefault> Not Found</p>

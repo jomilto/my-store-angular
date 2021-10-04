@@ -13,6 +13,15 @@
     }
 }
 
+.message-error {
+    background-color: red;
+    color: white;
+    opacity: 0;
+    &.invalid {
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width: 40em) {
     .products--grid {
         display: grid;
