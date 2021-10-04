@@ -12,7 +12,8 @@ export class AppComponent {
   widthImg = 10;
   person = {
     name: 'Jose',
-    age: 12
+    age: 12,
+    avatar: 'https://www.w3schools.com/howto/img_avatar.png'
   }
 
   box = {
@@ -72,5 +73,9 @@ export class AppComponent {
 
   deleteEmoji(index: number){
     this.emojis.splice(index, 1);
+  }
+
+  onRegister() {
+    console.log(this.register);
   }
 }
